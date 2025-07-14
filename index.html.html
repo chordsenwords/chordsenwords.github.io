@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chords & Words</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f2f2f2;
+      color: #1e1e1e;
+    }
+
+    header {
+      background-color: #fff;
+      color: #333;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9900;
+    }
+
+    .hero {
+      background: #ccc;
+      color: #000;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ff9900;
+      font-size: 2.5rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content img {
+      max-width: 100%;
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #ff9900;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    form button {
+      background: #ff9900;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/dtM8YvdX/Chords-Words.png" alt="Chords & Words Logo">
+    <h1>Chords & Words</h1>
+    <p>Guitar & English Lessons for Kids, Teens, & Adults</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#offer">Offer</a>
+    <a href="#booking">Book Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Join Our 3,000+ Followers</h1>
+    <p>Book a lesson pack and get a <strong>FREE 30-minute session</strong>!</p>
+    <img src="https://i.postimg.cc/L5d7Fwmp/Classes.gif" alt="Animated Class" style="width:480px; margin-top:20px;">
+  </div>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width: 800px; margin: auto;">
+      <strong>Chords & Words</strong> is a passion-driven learning hub that blends the joy of music with the power of language. Founded with the belief that creativity and communication are lifelong skills, we offer high-quality guitar and English lessons tailored for kids, teens, and adults alike.
+      <br><br>
+      Our music classes include Acoustic, Electric, and Bass Guitar training—whether you're a complete beginner or an aspiring performer. In parallel, our English programs offer Online Lessons, Reading Resources, and Custom Lesson Slides to improve grammar, confidence, and fluency.
+      <br><br>
+      With over <strong>3,000+ followers</strong> and counting, our mission is to make learning expressive, accessible, and fun for everyone. Join our growing community today and start your journey in music and language mastery.
+    </p>
+  </section>
+
+  <section class="section" id="offer">
+    <h2>Our Offerings</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.postimg.cc/Vks6nHn4/Acoustic-Guitar.jpg" alt="Acoustic Guitar">
+          <h3>🎸 Acoustic Guitar</h3>
+          <p>Master the fundamentals of acoustic guitar.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.postimg.cc/4Nst2PpH/Electric-Guitar.jpg" alt="Electric Guitar">
+          <h3>🎸 Electric Guitar</h3>
+          <p>Rock out with electric guitar lessons for all levels.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.postimg.cc/3xbvRHV2/Bass-Guitar.jpg" alt="Bass Guitar">
+          <h3>🎸 Bass Guitar</h3>
+          <p>Learn the groove and rhythm of bass guitar.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.postimg.cc/C5YZtMnp/English-Books.png" alt="English Books">
+          <h3>📚 English Books</h3>
+          <p>Explore reading and grammar using guided books.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.postimg.cc/3wXYqXXW/Online-English-Lesson.png" alt="Online English Lesson">
+          <h3>💻 Online English Lessons</h3>
+          <p>Join interactive Zoom classes from home.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <img src="https://i.postimg.cc/pTc7cr6p/English-Lesson-Slides.png" alt="Lesson Slides">
+          <h3>📖 English Lesson Slides</h3>
+          <p>Visual aids and lesson guides for students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>Student Testimonials</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-content">
+          <h3>🌟 Alyssa R., 16</h3>
+          <p>“I started with no experience at all, but now I can play full acoustic songs confidently. Sir Jesh is incredibly patient and explains everything in a way I can easily understand!”</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>🌟 Matthew D., 22</h3>
+          <p>“The electric guitar lessons are not just technical—they’re fun and motivating. Plus, I love how personalized each session feels. Highly recommended!”</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3>🌟 Jenica L., 32</h3>
+          <p>“I enrolled in the online English program to prepare for an interview abroad. The grammar guides and live Zoom sessions really boosted my confidence. Worth every peso!”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="booking">
+    <h2>Book a Lesson</h2>
+    <p style="text-align:center; max-width: 600px; margin: auto;">Use the form below to book a lesson. Your email app will open with your message ready to send.</p>
+    <form action="https://formsubmit.co/chordsenwords@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message or Preferred Schedule" required></textarea>
+      <button type="submit">Send Booking Request</button>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://chordsenwords.com/thank-you.html">
+    </form>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center; max-width: 600px; margin: auto;">
+      Email: <a href="mailto:chordsenwords@gmail.com">chordsenwords@gmail.com</a><br>
+      Facebook: <a href="https://facebook.com/chordsenwords" target="_blank">facebook.com/chordsenwords</a><br>
+      Instagram: @chordsenwords
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chords & Words. All rights reserved. | 3,000+ followers</p>
+  </footer>
+</body>
+</html>
